@@ -1,0 +1,11 @@
+.root-button {
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  height: 55px;
+  background: #991a40;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}

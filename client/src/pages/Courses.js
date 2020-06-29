@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Footer from "../views/Footer";
-import NavBar from "../views/NavBar";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 import Filters from "../components/Filters";
 import Spacer from "../components/Spacer";
-import Formations from "../views/Formations";
-import { Palette } from "./Home";
+import Layout from "../components/Layout";
+import Formations from "../components/Formations";
 
 function Courses() {
   const [filter, setFilter] = useState(null);
@@ -12,14 +12,13 @@ function Courses() {
     setFilter(filter)
   }
   return (
-    <section style={{ backgroundColor: Palette.common.white }}>
-      <NavBar />
+    <Layout>
+      <Spacer spacing={3} />
       <Filters onFilterChange={handleFilterChange} filter={filter} />
       <Spacer spacing={3} />
       <Formations filter={filter} />
       <Spacer spacing={3} />
-      <Footer />
-    </section>
+    </Layout>
   )
 }
 

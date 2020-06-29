@@ -1,0 +1,49 @@
+.root-cf {
+  background-color: #303941;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-cf {
+  display: grid;
+  grid-template-rows: 40px 40px 40px 80px 40px;
+  gap: 20px;
+}
+
+.input-cf {
+  background-color: unset;
+  border: unset;
+  border-bottom: 1px solid white;
+  outline: none;
+  height: 40px;
+  color: white;
+  width: 360px;
+  font-family: "poppins";
+}
+
+.textarea-cf {
+  background-color: unset;
+  border: unset;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  min-height: 80px;
+  font-family: "poppins";
+  width: 360px;
+  resize: none;
+}
+
+.submit-cf {
+  background-color: unset;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  min-height: 40px;
+  font-family: "poppins";
+  width: 360px;
+  cursor: pointer;
+}

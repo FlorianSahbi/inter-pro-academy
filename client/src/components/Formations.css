@@ -1,0 +1,17 @@
+.root-formations {
+  height: auto;
+  width: 100%;
+  background-color: #FBFBFB;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-formations {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 10px;
+  min-width: 1200px;
+  width: 1200px;
+}

@@ -9,7 +9,7 @@ const IconBox = ({ text, icon }) => {
       minWidth: "220px",
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
+      justifyContent: "start",
       alignItems: "center",
     },
     background: {

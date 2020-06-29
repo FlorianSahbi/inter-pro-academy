@@ -1,39 +1,21 @@
 import React from "react";
-import Header from "../views/Header";
-import Footer from "../views/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+import "./Layout.css";
 
-function Layout({ children }) {
-  const styles = {
-    root: {
-      minHeight: "100vh",
-      width: "100vw",
-      // border: "5px solid blue",
-    },
-    header: {
-      height: "100vh",
-      width: "100%",
-      // border: "5px solid red",
-    },
-    content: {
-      height: "auto",
-      width: "100%",
-      // border: "5px solid purple",
-    },
-    footer: {
-      height: "20vh",
-      width: "100%",
-      // border: "5px solid green",
-    }
-  }
+function Layout({ children, home }) {
+
   return (
-    <div style={styles.root}>
-      <div style={styles.header}>
-        <Header />
+    <div className="root-layout">
+      <div className="header-layout" style={{ height: home ? "100vh" : "unset" }}>
+        <NavBar home={home} />
+        <Header home={home} />
       </div>
-      <div style={styles.content}>
+      <div className="content-layout">
         {children}
       </div>
-      <div style={styles.footer}>
+      <div className="footer-layout">
         <Footer />
       </div>
     </div>

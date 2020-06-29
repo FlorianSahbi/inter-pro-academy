@@ -1,0 +1,36 @@
+.root-footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFBFB;
+}
+
+.wrapper-footer {
+  border-top: 1px dotted grey;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1200px;
+}
+
+.left-footer {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-footer {
+  height: 100%;
+  width: 100%;
+}
+
+.list-footer {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

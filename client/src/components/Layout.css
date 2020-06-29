@@ -1,0 +1,19 @@
+.root-layout {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fbfbfb;
+}
+
+.header-layout {
+  width: 100%;
+}
+
+.content-layout {
+  height: auto;
+  width: 100%;
+}
+
+.footer-layout {
+  height: 20vh;
+  width: 100%;
+}

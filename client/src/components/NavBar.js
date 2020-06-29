@@ -1,13 +1,14 @@
 import React from "react";
-import Typography from "../components/Typography";
+import Typography from "./Typography";
 import { useHistory } from "react-router-dom";
-import { Palette } from "../pages/Home";
+import { Theme } from "../config/Theme";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const NavBar = ({ home = false }) => {
   let history = useHistory();
   const styles = {
     root: {
-      backgroundColor: home ? "" : Palette.common.white,
+      backgroundColor: home ? "" : Theme.palette.common.white,
       position: home ? "absolute" : "",
       width: "100%",
       height: "100px",
@@ -16,15 +17,15 @@ const NavBar = ({ home = false }) => {
       alignItems: "center",
     },
     wrapper: {
-      width: "1200px",
+      width: "100%",
       height: "100%",
     },
     menuWrapper: {
-      width: "1200px",
+      width: "100%",
       height: "100%",
       display: "flex",
       alignItems: "center",
-      justifyContent: "space-between",
+      justifyContent: "space-evenly",
     }
   }
 
@@ -39,18 +40,19 @@ const NavBar = ({ home = false }) => {
     },
     {
       name: "Nos centres de formation",
-      url: "/"
-    },
-    {
-      name: "Contactez-nous",
-      url: "/"
+      url: "/places"
     },
   ]
   return (
     <div style={styles.root}>
       <div style={styles.wrapper}>
         <ul style={styles.menuWrapper}>
-          {menuContent.map(e => <li onClick={() => history.push(e.url)}><Typography color="#991A40" type="body1" text={e.name} /></li>)}
+          {menuContent.map(({name, url}) => <li key={`${name}`} style={{ cursor: "pointer" }} onClick={() => history.push(url)}><Typography color="#991A40" type="body1" text={name} /></li>)}
+          <AnchorLink href='#contact'>
+            <div style={{border: "2px solid #991A40", padding: ".5rem", borderRadius: "5px"}}>
+              <Typography color="#991A40" type="body1" text="Contactez-nous" />
+            </div>
+          </AnchorLink>
         </ul>
       </div>
     </div>

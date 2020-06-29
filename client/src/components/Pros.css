@@ -1,0 +1,16 @@
+.root-pros {
+  background-color: #303941;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 40vh;
+}
+
+.contentSection-pros {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}

@@ -1,0 +1,11 @@
+.root-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a515f;
+  background-image: url("https://www.traveldailymedia.com/assets/2019/09/shutterstock_1059887825.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

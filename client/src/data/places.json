@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Centre de Tunis",
+    "phone": "N/A",
+    "email": "N/A",
+    "address": "Rue Eben Kholdoun, 2058 Ryadh Landalous, Tunis",
+    "location": {
+      "lat": "36.8773697",
+      "long": "10.1677512,15z"
+    }
+  },
+  {
+    "name": "Centre d’El Kef",
+    "phone": "N/A",
+    "email": "N/A",
+    "address": "N/A",
+    "location": "N/A"
+  }
+]
