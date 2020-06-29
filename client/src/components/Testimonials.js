@@ -13,7 +13,7 @@ const Testimonials = () => {
       </div>
       <Spacer spacing={1} />
       <div className="contentSection-testimonials" >
-        {testimonials.map(({image, alt, city, identity, message}) => <TestimonialCard image={image} alt={alt} city={city} identity={identity} message={message} />)}
+        {testimonials.map(({image, alt, city, identity, message}) => <TestimonialCard key={`${city}-${identity}`} image={image} alt={alt} city={city} identity={identity} message={message} />)}
       </div>
     </div>
   )

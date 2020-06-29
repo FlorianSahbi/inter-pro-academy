@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 import Filters from "../components/Filters";
 import Spacer from "../components/Spacer";
 import Layout from "../components/Layout";

@@ -17,12 +17,12 @@ const Footer = () => {
             {
               FooterElem.map(({name}) => {
                 return (
-                  <>
+                  <span key={`${Math.floor(Math.random() * Math.floor(10))}`}>
                     <Spacer spacing={0.5} direction="horizontal" />
-                    <li key={`${name}`}>
+                    <li>
                       <Typography color="#000" text={name} type="body2" />
                     </li>
-                  </>
+                  </span>
                 )
               })
             }

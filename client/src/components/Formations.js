@@ -10,7 +10,9 @@ import "./Formations.css";
 
 const Formations = ({ limit, filter, seeMore }) => {
   const history = useHistory();
-  const { data, loading, error } = useQuery(GET_COURSES, { onError: error => console.log(error), onCompleted: data => console.log(data) })
+  const { data, loading, error } = useQuery(GET_COURSES, {
+    onError: error => console.error(error),
+  })
 
   const renderFormations = ({ courses }) => {
     if (filter) {
@@ -35,7 +37,7 @@ const Formations = ({ limit, filter, seeMore }) => {
         </div>
         <Spacer spacing={1} />
         {seeMore &&
-          <div style={{cursor: "pointer"}} onClick={() => history.push("/courses")}>
+          <div style={{ cursor: "pointer" }} onClick={() => history.push("/courses")}>
             <Typography text="Voir toutes les formations" type="body1" textAlign="center" />
           </div>
         }

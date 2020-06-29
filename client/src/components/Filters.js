@@ -7,8 +7,7 @@ import "./Filters.css";
 
 const Filters = ({ onFilterChange, filter }) => {
   const { data, loading, error } = useQuery(GET_CATEGORIES, {
-    onError: error => console.log("filter", error),
-    onCompleted: data => console.log("filter", data)
+    onError: error => console.error("filter", error),
   })
 
 
